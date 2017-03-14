@@ -64,10 +64,9 @@ static void fill_matrix(int rows, int colums)
   matrix = (char**) malloc(sizeof(char*) * rows);
 
   for(i = 0; i < rows; i++)
+  {
     matrix[i] = (char*) malloc(sizeof(char) * colums);
 
-  for(i = 0; i < rows; i++)
-  {
     for(j = 0; j < colums; j++)
     {
       if(string[string_index] != '\n')
